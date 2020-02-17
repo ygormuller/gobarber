@@ -1,6 +1,6 @@
 # gobarber
 <p align="center">
-  <img https://www.google.com/search?q=node&tbm=isch&source=iu&ictx=1&fir=FPUvBaSpZff7rM%253A%252CiZr4CeEAMgujmM%252C%252Fm%252F0bbxf89&vet=1&usg=AI4_-kR5bMdENZGsnz_ObTVMB_501heHjQ&sa=X&ved=2ahUKEwj40vqm_tjnAhUkA9QKHbvPA7QQ_B0wHHoECAUQAw#imgrc=FPUvBaSpZff7rM: />
+  <a title="node.js authors / Public domain" href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg"><img width="175" alt="Node.js logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/512px-Node.js_logo.svg.png"></a> 
 </p>
 Back-end de aplicação para agendamento de serviço.
 
@@ -11,4 +11,5 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add sucrase nodemon -D = Para utilizar o import express from 'express' ao invés de const express require
 - Instalar Docker
 - Instalar PostBird
+
 
