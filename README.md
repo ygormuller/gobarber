@@ -8,10 +8,10 @@ Back-end de aplicação para agendamento de serviço.
 
 *Necessário instalação:
 
-- yarn init -y = para criar o arquivo package.json
-- yarn add express = adicionar dependencia express
-- yarn add sucrase nodemon -D = Para utilizar o import express from 'express' ao invés de const express require
+- yarn init -y // para criar o arquivo package.json
+- yarn add express // adicionar dependencia express
+- yarn add sucrase nodemon -D // Para utilizar o import express from 'express' ao invés de const express require
 - Instalar Docker
-- Instalar PostBird
+- Instalar Postbird
 
 
