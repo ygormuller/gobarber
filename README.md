@@ -17,6 +17,7 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D // 
 - yarn add sequelize
 - yarn add sequelize cli -D
+- yarn add pg-hstore
 - Instalar Docker
 - Instalar Postbird
 
