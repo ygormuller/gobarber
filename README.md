@@ -20,6 +20,7 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add pg-hstore
 - yarn add bcryptjs
 - yarn add jasonwebtoken
+- yarn add yup
 - Instalar Docker
 - Instalar Postbird
 
