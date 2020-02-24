@@ -18,6 +18,8 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add sequelize
 - yarn add sequelize cli -D
 - yarn add pg-hstore
+- yarn add bcryptjs
+- yarn add jasonwebtoken
 - Instalar Docker
 - Instalar Postbird
 
