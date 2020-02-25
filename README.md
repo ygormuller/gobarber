@@ -5,6 +5,9 @@
   
   <p align="left">
   <img width="175" alt="Docker logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"></a> 
+  <img width="75" alt="Postbird logo"
+ src="https://www.electronjs.org/app-img/postbird/postbird-icon-128.png"></a>
+ </p>
 
 
 Back-end de aplicação para agendamento de serviço.
