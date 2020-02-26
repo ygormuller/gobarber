@@ -5,7 +5,7 @@
 
   <p align="center">
   <img widht="30" alt= "Vscode logo"
-       src="https://code.visualstudio.com/assets/favicon.ico"></a>
+       src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/64px-Visual_Studio_Code_1.18_icon.svg.png"></a>
 
    <img widht="30" alt= "EditorConfig logo"
        src="https://editorconfig.org/logo.png"></a>  
