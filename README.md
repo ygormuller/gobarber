@@ -6,20 +6,15 @@
   <p align="center">
   <img widht="30" alt= "Vscode logo"
        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/64px-Visual_Studio_Code_1.18_icon.svg.png"></a>
-
    <img widht="30" alt= "EditorConfig logo"
-       src="https://editorconfig.org/logo.png"></a>  
+       src="https://editorconfig.org/logo.png"></a> 
   <img width="75" alt="ESlint logo"
        src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg"></a>
-
   <img width="75" alt="ESlint logo"
        src="https://prettier.io/icon.png"></a>
-
   <img width="75" alt="Yarn logo"
        src="https://seeklogo.com/images/Y/yarn-logo-F5E7A65FA2-seeklogo.com.png"></a>
-
   <img width="100" alt="Docker logo" src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png"></a>
-
   <img width="75" alt="Postbird logo"
  src="https://www.electronjs.org/app-img/postbird/postbird-icon-128.png"></a>
  </p>
