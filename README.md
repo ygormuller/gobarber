@@ -4,6 +4,8 @@
   <a title="node.js authors / Public domain" href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg"><img width="175" alt="Node.js logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/512px-Node.js_logo.svg.png"></a>
 
   <p align="left">
+  <img width="75" alt="Yarn logo"
+       src="https://seeklogo.com/images/Y/yarn-logo-F5E7A65FA2-seeklogo.com.png"></a>
   <img width="175" alt="Docker logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"></a>
   <img width="75" alt="Postbird logo"
  src="https://www.electronjs.org/app-img/postbird/postbird-icon-128.png"></a>
