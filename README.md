@@ -1,7 +1,7 @@
 
 # Gobarber
 <p align="center">
-  <a title="node.js authors / Public domain" href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg"><img width="175" alt="Node.js logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/512px-Node.js_logo.svg.png"></a> 
+  <a title="node.js authors / Public domain" href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg"><img width="175" alt="Node.js logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/512px-Node.js_logo.svg.png"></a>
 
 
 Back-end de aplicação para agendamento de serviço.
@@ -14,16 +14,14 @@ Back-end de aplicação para agendamento de serviço.
 - yarn eslint -D // manter padrão do código
 - yarn eslint --init // configurar eslint
 - Instalar extensão do Eslint e EditorConfig no VSCode
-- yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D // 
+- yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D //
 - yarn add sequelize
 - yarn add sequelize cli -D
 - yarn add pg-hstore
 - yarn add bcryptjs
 - yarn add jasonwebtoken
-<<<<<<< HEAD
-=======
 - yarn add yup
->>>>>>> 00e0613de10b459aad39c24aae0a0b7f1f7d0f37
+- yarn add multer
 - Instalar Docker
 - Instalar Postbird
 
