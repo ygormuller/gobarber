@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 import User from '../models/User';
-import Appoointment from '../models/Appointments';
+import Appointment from '../models/Appointment';
 
 class AppointmentController{
   async store(req,res){
@@ -13,19 +13,19 @@ class AppointmentController{
     return res.status(400).json({error: 'Validation fails'});
   }
   const { provider_id, date } = req.body;
-  
+
   /** Check if provider_id is a provider*/
-  const isProvider = await User.findOne({
+  const checkIsProvider = await User.findOne({
     where: { id:provider_id, provider: true},
    });
 
-   if(!isProvider) {
+   if(!checkIsProvider) {
     return res
       .status(401)
       .json({error: "You can only create appointments with providers"})
-    } 
-    
-    const appointments = await Appointment.create({
+    }
+
+    const appointment = await Appointment.create({
       user_id: req.userId,
       provider_id,
       date,
