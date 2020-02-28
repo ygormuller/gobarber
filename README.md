@@ -38,6 +38,7 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add jasonwebtoken
 - yarn add yup
 - yarn add multer
+- yarn add date-fnd@next
 - Instalar Docker
 - Instalar Postbird
 
