@@ -7,7 +7,7 @@
   <img widht="30" alt= "Vscode logo"
        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/64px-Visual_Studio_Code_1.18_icon.svg.png"></a>
    <img widht="30" alt= "EditorConfig logo"
-       src="https://editorconfig.org/logo.png"></a> 
+       src="https://editorconfig.org/logo.png"></a>
   <img width="75" alt="ESlint logo"
        src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg"></a>
   <img width="75" alt="ESlint logo"
@@ -41,5 +41,6 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add date-fnd@next
 - Instalar Docker
 - Instalar Postbird
+- Instalar MongoDB Compass
 
 

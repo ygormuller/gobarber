@@ -7,6 +7,7 @@ import SessionController from './app/controllers/SessionController';
 import FileController from './app/controllers/FileController';
 import ProviderController from './app/controllers/ProviderController';
 import AppointmentController from './app/controllers/AppointmentController';
+import ScheduleController from './app/controllers/SheduleController';
 
 // eslint-disable-next-line import/no-named-as-default
 import authMiddleware from './app/middlewares/auth';
@@ -30,10 +31,12 @@ routes.put('/users', UserController.update);
 
 routes.get('/providers', ProviderController.index);
 
-routes.get('/appointments', Appointment.index);
+routes.get('/appointments', AppointmentController.index);
 routes.post('/appointments', AppointmentController.store);
 
 routes.post('/files', upload.single('file'), FileController.store);
+
+routes.get('/schedule', ScheduleController.index);
 
 //routes.post('/files', upload.single('file'), (req, res) => {
   //return res.json({ ok:true });
