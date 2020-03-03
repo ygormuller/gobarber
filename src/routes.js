@@ -10,6 +10,7 @@ import AppointmentController from './app/controllers/AppointmentController';
 
 // eslint-disable-next-line import/no-named-as-default
 import authMiddleware from './app/middlewares/auth';
+import Appointment from './app/models/Appointment';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -29,6 +30,7 @@ routes.put('/users', UserController.update);
 
 routes.get('/providers', ProviderController.index);
 
+routes.get('/appointments', Appointment.index);
 routes.post('/appointments', AppointmentController.store);
 
 routes.post('/files', upload.single('file'), FileController.store);
