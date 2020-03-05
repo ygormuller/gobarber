@@ -39,8 +39,10 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add yup
 - yarn add multer
 - yarn add date-fnd@next
+- yarn add nodemailer
 - Instalar Docker
 - Instalar Postbird
 - Instalar MongoDB Compass
+- Conta no mailtrap
 
 
