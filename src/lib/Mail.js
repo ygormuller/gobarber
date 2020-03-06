@@ -5,7 +5,7 @@ class Mail {
   constructor() {
     const { host, port, secure, auth } = mailConfig;
    
-    this.transporte = nodemailer.createTransport({
+    this.transporter = nodemailer.createTransport({
      host,
      port,
      secure,
