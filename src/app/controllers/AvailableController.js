@@ -1,7 +1,7 @@
-import { startOfDay, endOfDay, setHours, setMinutes, setSecond, format } from 'date-fns';
+import { startOfDay, endOfDay, setHours, setMinutes, setSeconds, format, isAfter } from 'date-fns';
 import { Op } from 'sequelize';
 import Appointment from '../models/Appointment';
-import { format } from 'path';
+//import { format } from 'path';
 
 class AvailableController {
   async index(req,res) {
@@ -12,12 +12,12 @@ class AvailableController {
     }
     const searchDate = Number(date);
 
-    const appointments = await Appointments.findAll({
+    const appointments = await Appointment.findAll({
       where: {
         provider_id: req.params.providerId,
         canceled_at: null,
         date: {
-          [Op.between]: [startOfDay(searchDate), endOfDay(searchdate)],
+          [Op.between]: [startOfDay(searchDate), endOfDay(searchDate)],
         },
       },
     });
@@ -35,9 +35,10 @@ class AvailableController {
       '17:00',
       '18:00',
       '19:00',
+      '23:45',
     ];
 
-    const available = schedule.map( time => {
+    const avaiable = schedule.map( time => {
       const [hour, minute] = time.split(':');
       const value = setSeconds(
         setMinutes(setHours(searchDate, hour), minute),
@@ -46,7 +47,7 @@ class AvailableController {
 
       return {
         time,
-        value: format(value, "yyyy-MM-dd'T'HH:mm:ssxx"),
+        value: format(value, "yyyy-MM-dd'T'HH:mm:ssxxx"),
         available:
           isAfter(value, new Date()) &&
           !appointments.find(a => format(a.date, 'HH:mm') === time),
@@ -54,7 +55,7 @@ class AvailableController {
     });
 
 
-    return res.json();
+    return res.json(avaiable);
   }
 }
 
