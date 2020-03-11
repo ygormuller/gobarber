@@ -14,7 +14,7 @@ class AppointmentController{
     const appointments = await Appointment.findAll({
       where: {user_id: req.userId, canceled_at:null},
       order: ['date'],
-      atributtes: ['id','date'],
+      atributtes: ['id','date', 'past'],
       include: [
         {
           model:User,
@@ -24,7 +24,7 @@ class AppointmentController{
             {
               model: File,
               as: 'avatar',
-              attributes: ['id','path', 'url'],
+              attributes: ['id','path', 'url', 'cancelable'],
             },
           ],
         },
