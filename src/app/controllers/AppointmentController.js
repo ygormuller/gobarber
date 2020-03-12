@@ -11,10 +11,14 @@ import Queue from '../../lib/Queue';
 
 class AppointmentController{
   async index (req,res){
+    const { page = 1 } = req.query;
+
     const appointments = await Appointment.findAll({
       where: {user_id: req.userId, canceled_at:null},
       order: ['date'],
-      atributtes: ['id','date', 'past'],
+      atributtes: ['id','date', 'past', 'cancelable'],
+      limit: 20,
+      offset: (page -1) * 20,
       include: [
         {
           model:User,
@@ -24,7 +28,7 @@ class AppointmentController{
             {
               model: File,
               as: 'avatar',
-              attributes: ['id','path', 'url', 'cancelable'],
+              attributes: ['id','path', 'url'],
             },
           ],
         },
