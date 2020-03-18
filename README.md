@@ -41,9 +41,11 @@ Back-end de aplicação para agendamento de serviço.
 - yarn add date-fnd@next
 - yarn add nodemailer
 - yarn add dotenv
+- yarn add @ sentry//node@(versão)
+- yarn add express-async-errors
+- yarn add youch
+- yarn add cors
 - Instalar Docker
 - Instalar Postbird
 - Instalar MongoDB Compass
 - Conta no mailtrap
-
-
