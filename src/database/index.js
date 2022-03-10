@@ -1,10 +1,10 @@
 import Sequelize from 'sequelize';
 import mongoose from 'mongoose';
-import User from '../app/models/User';
-import File from '../app/models/File';
-import Appointment from '../app/models/Appointment';
+import User from '../app/models/User.js';
+import File from '../app/models/File.js';
+import Appointment from '../app/models/Appointment.js';
 
-import databaseConfig from '../config/database';
+import databaseConfig from '../config/database.js';
 
 const models = [User, File, Appointment];
 class Database {
@@ -22,8 +22,8 @@ class Database {
 
   mongo(){
     this.mongoConnection = mongoose.connect(
-    process.env.MONGO_URL,
-    {useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true}
+      "mongodb://localhost:27017/mongodb",
+    {useNewUrlParser: true, useUnifiedTopology: true}
       );
     }
 
