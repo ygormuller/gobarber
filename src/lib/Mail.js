@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { resolve } from 'path';
 import exphbs from 'express-handlebars';
 import nodemailerhbs from 'nodemailer-express-handlebars';
-import mailConfig from '../config/mail';
+import mailConfig from '../config/mail.js';
 
 class Mail {
   constructor() {
@@ -26,7 +26,7 @@ class Mail {
     this.transporter.use(
       'compile',
       nodemailerhbs({
-        viewEngine: exphbs.create({
+        viewEngine: ({
           layoutsDir: resolve(viewPath, 'layouts'),
           partialsDir: resolve(viewPath, 'partials'),
           defaultLayout: 'default',
@@ -47,4 +47,5 @@ class Mail {
 }
 
 export default new Mail();
+
 

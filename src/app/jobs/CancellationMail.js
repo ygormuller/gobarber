@@ -1,6 +1,6 @@
 import { format, parseISO } from 'date-fns';
-import pt from 'date-fns/locale/pt';
-import Mail from '../../lib/Mail';
+import pt from 'date-fns/locale/pt/index.js';
+import Mail from '../../lib/Mail.js';
 //cada job necessita de uma chave única
 class CancellationMail{
   get key() {

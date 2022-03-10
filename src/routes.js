@@ -1,18 +1,18 @@
 import { Router } from 'express';
 import multer from 'multer';
-import multerConfig from './config/multer';
+import multerConfig from './config/multer.js';
 // import User from './app/models/User';
-import UserController from './app/controllers/UserController';
-import SessionController from './app/controllers/SessionController';
-import FileController from './app/controllers/FileController';
-import ProviderController from './app/controllers/ProviderController';
-import AppointmentController from './app/controllers/AppointmentController';
-import ScheduleController from './app/controllers/SheduleController';
-import NotificationController from './app/controllers/NotificationController';
-import AvailableController from './app/controllers/AvailableController';
+import UserController from './app/controllers/UserController.js';
+import SessionController from './app/controllers/SessionController.js';
+import FileController from './app/controllers/FileController.js';
+import ProviderController from './app/controllers/ProviderController.js';
+import AppointmentController from './app/controllers/AppointmentController.js';
+import ScheduleController from './app/controllers/SheduleController.js';
+import NotificationController from './app/controllers/NotificationController.js';
+import AvailableController from './app/controllers/AvailableController.js';
 
 // eslint-disable-next-line import/no-named-as-default
-import authMiddleware from './app/middlewares/auth';
+import authMiddleware from './app/middlewares/auth.js';
 //import Appointment from './app/models/Appointment';
 
 const routes = new Router();
